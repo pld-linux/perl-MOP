@@ -14,7 +14,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
 # Source0-md5:	93c05ede1ecc9c01a385e4f21fd58382
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-Filter
 BuildRequires:	rsh
