@@ -9,7 +9,7 @@ Version:	1.00
 Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/MOP/MOP-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 %if %{?_with_tests:1}%{!?_with_tests:0}
