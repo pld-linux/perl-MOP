@@ -50,7 +50,7 @@ I to w³a¶nie jest celem istnienia modu³u MOP.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{?_with_tests:%{__make} test}
