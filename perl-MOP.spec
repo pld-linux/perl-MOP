@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
+%bcond_with	tests	# perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl modules
 Summary(pl):	MOP::MOP - rozszerzenie Perla udostêpniaj±ce modu³om meta-obiektowy protokó³
@@ -13,7 +14,7 @@ Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
 # Source0-md5:	93c05ede1ecc9c01a385e4f21fd58382
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
-%if %{?_with_tests:1}%{!?_with_tests:0}
+%if %{with tests}
 BuildRequires:	perl-Filter
 BuildRequires:	rsh
 BuildRequires:	rshd
@@ -53,7 +54,7 @@ I to w³a¶nie jest celem istnienia modu³u MOP.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
