@@ -6,7 +6,7 @@ Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl mod
 Summary(pl):	MOP::MOP - rozszerzenie Perla udostêpniaj±ce modu³om meta-obiektowy protokó³
 Name:		perl-MOP
 Version:	1.00
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
