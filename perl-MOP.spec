@@ -6,11 +6,11 @@ Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl mod
 Summary(pl):	MOP::MOP - rozszerzenie Perla udostêpniaj±ce modu³om meta-obiektowy protokó³
 Name:		perl-MOP
 Version:	1.00
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 %if %{?_with_tests:1}%{!?_with_tests:0}
 BuildRequires:	perl-Filter
@@ -48,7 +48,8 @@ I to w³a¶nie jest celem istnienia modu³u MOP.
 %setup -q -n MOP-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{?_with_tests:%{__make} test}
@@ -64,5 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/MOP
+%{perl_vendorlib}/MOP
 %{_mandir}/man3/*
