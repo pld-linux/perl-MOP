@@ -2,8 +2,7 @@
 # Conditional build:
 # _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-Summary:	MOP perl module
-Summary(pl):	Modu³ perla MOP
+Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl modules.
 Name:		perl-MOP
 Version:	1.00
 Release:	6
@@ -19,10 +18,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MOP perl module.
-
-%description -l pl
-Modu³ perla MOP.
+This module provides a simple and, in my opinion, powerful meta-object
+protocol (MOP) for Perl5 modules.  In short, such MOP allows to I<trap
+the method calls> made on an object (represented by a reference) before
+they reach the original module implementing them. These method calls
+are redirected to another module, called the meta-module, before their
+execution. The original (legitimate) destination of the method call is
+in the (base) module. Of course, one day or another, the meta-module
+should perform the actual normal method call at the base level, but
+it can do some nice things before or after doing that. And this is the
+whole purpose of its existence.
 
 %prep
 %setup -q -n MOP-%{version}
