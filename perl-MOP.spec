@@ -8,7 +8,8 @@ Summary(pl):	MOP::MOP - rozszerzenie Perla udostêpniaj±ce modu³om meta-obiektowy
 Name:		perl-MOP
 Version:	1.00
 Release:	9
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
 # Source0-md5:	93c05ede1ecc9c01a385e4f21fd58382
