@@ -48,7 +48,7 @@ I to w³a¶nie jest celem istnienia modu³u MOP.
 %setup -q -n MOP-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{?_with_tests:%{__make} test}
