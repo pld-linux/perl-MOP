@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl modules
-Summary(pl):	MOP::MOP - rozszerzenie Perla udostÍpniaj±ce modu≥om meta-obiektowy protokÛ≥
+Summary(pl.UTF-8):   MOP::MOP - rozszerzenie Perla udostƒôpniajƒÖce modu≈Çom meta-obiektowy protok√≥≈Ç
 Name:		perl-MOP
 Version:	1.00
 Release:	10
@@ -35,17 +35,17 @@ should perform the actual normal method call at the base level, but it
 can do some nice things before or after doing that. And this is the
 whole purpose of its existence.
 
-%description -l pl
-Ten modu≥ udostÍpnia modu≥om Perla prosty, i, zdaniem autora, o duøych
-moøliwo∂ciach protokÛ≥ meta-obiektowy (meta-object protocol - MOP). W
-skrÛcie, MOP pozwala na przechwytywanie wywo≥aÒ metod na obiekcie
-(reprezentowanym przez referencjÍ) przed osi±gniÍciem oryginalnego
-modu≥u zawieraj±cego implementacjÍ. Te wywo≥ania metod s± przed
-wykonaniem przekierowywane do innego modu≥u, zwanego meta-modu≥em.
-Oryginalny cel wywo≥ania metody jest w module bazowym. Oczywi∂cie w
-ktÛrym∂ momencie meta-modu≥ powinien wykonaÊ normalne wywo≥anie metody
-na poziomie podstawowym, ale przed lub po tym moøe robiÊ rÛøne rzeczy.
-I to w≥a∂nie jest celem istnienia modu≥u MOP.
+%description -l pl.UTF-8
+Ten modu≈Ç udostƒôpnia modu≈Çom Perla prosty, i, zdaniem autora, o du≈ºych
+mo≈ºliwo≈õciach protok√≥≈Ç meta-obiektowy (meta-object protocol - MOP). W
+skr√≥cie, MOP pozwala na przechwytywanie wywo≈Ça≈Ñ metod na obiekcie
+(reprezentowanym przez referencjƒô) przed osiƒÖgniƒôciem oryginalnego
+modu≈Çu zawierajƒÖcego implementacjƒô. Te wywo≈Çania metod sƒÖ przed
+wykonaniem przekierowywane do innego modu≈Çu, zwanego meta-modu≈Çem.
+Oryginalny cel wywo≈Çania metody jest w module bazowym. Oczywi≈õcie w
+kt√≥rym≈õ momencie meta-modu≈Ç powinien wykonaƒá normalne wywo≈Çanie metody
+na poziomie podstawowym, ale przed lub po tym mo≈ºe robiƒá r√≥≈ºne rzeczy.
+I to w≈Ça≈õnie jest celem istnienia modu≈Çu MOP.
 
 %prep
 %setup -q -n MOP-%{version}
