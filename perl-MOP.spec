@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl modules
-Summary(pl.UTF-8):   MOP::MOP - rozszerzenie Perla udostępniające modułom meta-obiektowy protokół
+Summary(pl.UTF-8):	MOP::MOP - rozszerzenie Perla udostępniające modułom meta-obiektowy protokół
 Name:		perl-MOP
 Version:	1.00
 Release:	10
