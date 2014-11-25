@@ -1,7 +1,9 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test"
-#
+
+%define		pdir	MOP
+%define		pnam	MOP
 %include	/usr/lib/rpm/macros.perl
 Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl modules
 Summary(pl.UTF-8):	MOP::MOP - rozszerzenie Perla udostępniające modułom meta-obiektowy protokół
@@ -13,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MOP/MOP-%{version}.tar.gz
 # Source0-md5:	93c05ede1ecc9c01a385e4f21fd58382
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/MOP-MOP/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Filter
 BuildRequires:	rsh
@@ -25,7 +28,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module provides a simple and, in my opinion, powerful meta-object
-protocol (MOP) for Perl5 modules.  In short, such MOP allows to trap
+protocol (MOP) for Perl5 modules. In short, such MOP allows to trap
 the method calls made on an object (represented by a reference) before
 they reach the original module implementing them. These method calls
 are redirected to another module, called the meta-module, before their
