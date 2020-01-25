@@ -4,7 +4,6 @@
 
 %define		pdir	MOP
 %define		pnam	MOP
-%include	/usr/lib/rpm/macros.perl
 Summary:	MOP::MOP - Perl extension providing a meta-object protocol for Perl modules
 Summary(pl.UTF-8):	MOP::MOP - rozszerzenie Perla udostępniające modułom meta-obiektowy protokół
 Name:		perl-MOP
